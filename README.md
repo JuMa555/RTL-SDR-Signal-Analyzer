@@ -9,6 +9,7 @@ First, ensure you have Python 3 installed. Then, install the necessary libraries
 
 ```bash
 pip install matplotlib numpy pyrtlsdr tkinter
+```
 
 Additionally, for the pyrtlsdr library to work correctly, it is necessary to download the .zip file from the following link: https://ftp.osmocom.org/binaries/windows/rtl-sdr/. The version used during the development of the software solution for this project was "rtl-sdr-64bit-20230430.zip".
 Connect the RTL-SDR receiver to your computer. To use the RTL-SDR receiver on a Windows operating system, you need to install the appropriate drivers. Zadig is a free tool for installing USB drivers, which is essential for working with RTL-SDR. To download Zadig, visit the Zadig tool's website: http://zadig.akeo.ie/downloads/. After downloading Zadig, launch it. It is recommended to select the "Options -> List All Devices" option in the Zadig interface. Choose "Bulk-In, Interface (Interface 0)" from the dropdown list. Double-check that the USB ID shows "0BDA 2838 00," as this indicates that the receiver is selected. We need to install the WinUSB driver, so make sure WinUSB is selected in the box to the right of the green arrow. The box to the left of the green arrow is not important and may display (NONE) or (RTL...). The box on the left indicates the currently installed driver, while the box on the right shows the driver that will be installed after you click "Replace/Install Driver."
